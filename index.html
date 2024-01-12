@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>December-Break-Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="time" id="time"></div>
+      <div id="start-container">
+        <p>
+          This Quiz contains 12 JavaScript Questions and options. <br />Kindly
+          attempt all Questions
+        </p>
+        <p>You have approximately 30 minutes to complete it.</p>
+        <button class="btn1">Start Quiz</button>
+      </div>
+      <div class="quiz-container" id="quiz-container">
+        <h1>JavaScript Quiz</h1>
+        <h3 id="question"></h3>
+        <div id="option-container"></div>
+        <button id="proceed-btn" onclick="nextQuestion()">Proceed</button>
+        <p id="result"></p>
+        <p id="feedback"></p>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <h1>Quiz Result</h1>
+          <p id="score"></p>
+          <button id="Try-Again">Try Again</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
