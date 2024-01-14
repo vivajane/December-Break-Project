@@ -76,17 +76,6 @@ const questions = [
         correctAnswer: 0
 
     },
-    // {
-    //     question: "What is the use of the <noscript> tag in Javascript?",
-    //     options: [
-    //         "The contents are displayed by non JS-based browsers",
-    //         "Clears all cookies and cache",
-    //         "Both A and B",
-    //         "None of the above",
-    //     ],
-    //     correctAnswer: 0
-
-    // },
     {
         question: "When an operator’s value is NULL, the typeof returned by the unary operator is:",
         options: [
@@ -134,9 +123,9 @@ const questions = [
 const time = document.querySelector('#time');
 const startContainer = document.querySelector('#start-container');
 const btn = document.querySelector('.btn1');
-const quizContainer = document.getElementById('quiz-container');
-const questionContainer = document.getElementById('question');
-const optionContainer = document.getElementById('option-container');
+const quizContainer = document.querySelector('#quiz-container');
+const questionContainer = document.querySelector('#question');
+const optionContainer = document.querySelector('#option-container');
 const proceed = document.querySelector('#proceed-btn');
 const result = document.querySelector('#result');
 const feedBack = document.querySelector('#feedback');
@@ -209,7 +198,7 @@ function endQuiz() {
     buttons.forEach((button) => (button.disabled = true));
 
     //Show the result message
-    alert("Time's Up")
+    alert("Time's Up");
     scores.style.display = "block";
     showResult();
 
@@ -264,7 +253,7 @@ function checkAnswer() {
 
     if (selectedIndex === currentQuestionData.correctAnswer) {
         result.innerHTML = "<span style='font-weight: bold; font-size: 1.5em;'>Correct!</span>";
-        result.style.color = "green"
+        result.style.color = "green";
         questions.score++;
     } else if (selectedIndex !== -1) {
         result.innerHTML = `<span style = "font-weight: bold; font-size: 1.5em; color: red;">Incorrect! </span><span style='font-weight: bold; font-size: 1.2em;'> ${
@@ -304,7 +293,6 @@ function nextQuestion() {
         currentQuestion++;
         loadQuestion();
     } else {
-        console.log("hello")
         scores.style.display = "block";
         showResult();
     };
@@ -316,13 +304,13 @@ function showResult() {
     scores.textContent = `${score} out of ${questions.length}`;
     tryAgain.addEventListener("click", tryAgainClickEventHandler);
 
-    // document.getElementById("modal").style.display = "block";
-    tryAgain.addEventListener("click", tryAgainClickEventHandler);
     modal.style.display = "block";
+    modalContent.style.display = "block";
 
     document.addEventListener("click", modalDisplay);
 
 }
+
 function modalDisplay(event) {
     // const scores = document.getElementById("score");
   

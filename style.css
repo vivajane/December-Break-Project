@@ -104,6 +104,7 @@ div .btn1:hover{
 
 }
 #score{
+    display: none;
     padding: 20px;
     font-weight: bolder;
     color: rgb(25, 21, 29);
@@ -111,7 +112,7 @@ div .btn1:hover{
 }
 .modal{
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
