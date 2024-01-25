@@ -312,7 +312,6 @@ function showResult() {
 }
 
 function modalDisplay(event) {
-    // const scores = document.getElementById("score");
   
     // Check if the clicked element is outside the score section
     if (!scores.contains(event.target)) {
@@ -331,8 +330,6 @@ const tryAgainClickEventHandler = () => {
     quizContainer.style.display = "block";
 
     // Reset the quiz
-    currentQuestion = 0;
-    score = 0;
     loadQuestion();
     remainingTime = 1800;
     timeDisplay();

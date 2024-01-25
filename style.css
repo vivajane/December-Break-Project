@@ -107,7 +107,7 @@ div .btn1:hover{
     display: none;
     padding: 20px;
     font-weight: bolder;
-    color: rgb(25, 21, 29);
+    color: rgb(74, 214, 221);
     font-size: larger;
 }
 .modal{
@@ -117,12 +117,12 @@ div .btn1:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(109, 102, 102, 0.5); 
     z-index: 1; 
 
 }
 .modal-content{
-    background-color: rgb(112, 55, 67);
+    background-color: rgb(202, 170, 177);
     width: 500px;
     height: 300px;
     margin: 40px auto;
